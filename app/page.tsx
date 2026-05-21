@@ -344,7 +344,7 @@ export default function Home() {
       }
       if (!dino.jumping && !dino.ducking) {
         dino.jumping = true;
-        dino.vy = -13; // stronger jump
+        dino.vy = -15; // stronger jump
       }
     }
 
@@ -391,9 +391,7 @@ export default function Home() {
     }}>
       {/* Header */}
       <div style={{ textAlign: "center", marginBottom: "40px" }}>
-        <div style={{ fontSize: "11px", letterSpacing: "0.3em", color: "#444", marginBottom: "14px", textTransform: "uppercase" }}>
-          vivekmohod.fun
-        </div>
+      
         <h1 style={{
           fontSize: "clamp(28px, 6vw, 54px)",
           fontWeight: 700,
@@ -405,8 +403,7 @@ export default function Home() {
           Hi, I&apos;m Vivek
         </h1>
         <p style={{ fontSize: "clamp(13px, 2vw, 15px)", color: "#555", margin: "0 0 6px", letterSpacing: "0.06em" }}>
-          Python · Backend · ML —{" "}
-          <span style={{ color: "#6aaa3a" }}>coming soon</span>
+          Portfolio will be uploaded soon 
         </p>
         <p style={{ fontSize: "12px", color: "#383838", margin: 0 }}>
           until then — you can play this
@@ -450,9 +447,7 @@ export default function Home() {
           color: "#2e2e2e",
           letterSpacing: "0.1em",
         }}>
-          <span>↑ space — jump</span>
-          <span>↓ — duck</span>
-          <span>tap — mobile</span>
+          
         </div>
       </div>
 
