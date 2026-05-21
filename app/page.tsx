@@ -402,7 +402,7 @@ export default function Home() {
         }}>
           Hi, I&apos;m Vivek
         </h1>
-        <p style={{ fontSize: "clamp(13px, 2vw, 15px)", color: "#555", margin: "0 0 6px", letterSpacing: "0.06em" }}>
+        <p style={{ fontSize: "clamp(13px, 2vw, 15px)", color: "#9b9b9b", margin: "0 0 6px", letterSpacing: "0.06em" }}>
           Portfolio will be uploaded soon 
         </p>
 
