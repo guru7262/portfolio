@@ -281,7 +281,7 @@ export default function Home() {
         const dino = g.dino;
         // Jump physics — stronger jump, softer gravity
         if (dino.jumping) {
-          dino.vy += 0.65;
+          dino.vy += 0.45;
           dino.y -= dino.vy;
           if (dino.y <= 0) {
             dino.y = 0;
