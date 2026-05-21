@@ -368,13 +368,13 @@ export default function Home() {
 
     window.addEventListener("keydown", onKey);
     window.addEventListener("keyup", onKeyUp);
-    canvas.addEventListener("touchstart", onTouch, { passive: false });
+    window.addEventListener("touchstart", onTouch, { passive: false });
 
     return () => {
       if (g.animFrame) cancelAnimationFrame(g.animFrame);
       window.removeEventListener("keydown", onKey);
       window.removeEventListener("keyup", onKeyUp);
-      canvas.removeEventListener("touchstart", onTouch);
+      window.removeEventListener("touchstart", onTouch);
     };
   }, []);
 
@@ -405,9 +405,7 @@ export default function Home() {
         <p style={{ fontSize: "clamp(13px, 2vw, 15px)", color: "#555", margin: "0 0 6px", letterSpacing: "0.06em" }}>
           Portfolio will be uploaded soon 
         </p>
-        <p style={{ fontSize: "12px", color: "#383838", margin: 0 }}>
-          until then — you can play this
-        </p>
+
       </div>
 
       {/* Game — no box, just the canvas sitting in the page */}
