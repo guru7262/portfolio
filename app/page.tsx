@@ -116,7 +116,11 @@ export default function Home() {
   }, []);
 
   function scrollTo(section: string) {
-    sectionRefs.current[section]?.scrollIntoView({ behavior: "smooth" });
+    if (section === "About") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      sectionRefs.current[section]?.scrollIntoView({ behavior: "smooth" });
+    }
     setMenuOpen(false);
   }
 
