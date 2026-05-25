@@ -494,12 +494,13 @@ export default function Home() {
         }
         .form-submit:hover { background: #333; color: #fff; transform: translateY(-1px); border-color: #555; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
 
-        .contact-socials-label {
+         .contact-socials-label {
           font-size: 10px; font-weight: 700;
           letter-spacing: 0.15em; text-transform: uppercase;
           color: #555; margin-bottom: 20px;
+          text-align: center;
         }
-        .contact-icons { display: flex; gap: 16px; flex-wrap: wrap; }
+        .contact-icons { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
         .contact-icon {
           width: 52px; height: 52px;
           border-radius: 50%;
